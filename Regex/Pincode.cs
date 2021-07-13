@@ -10,7 +10,7 @@ namespace RegexExpression
         public void Check(string pincode)
         {
             //regex pattern is created to check validity
-            string pattern = "^[1-9]{1}[0-9]{5}$";
+            string pattern = "^[1-9][0-9]{2}\\s{0,1}[0-9]{3}$";
             Regex regex = new Regex(pattern);
             // IsMatch method check the pattern and pincode
             if(regex.IsMatch(pincode))
