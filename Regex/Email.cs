@@ -11,9 +11,9 @@ namespace RegexExpression
         public void Check(string mail)
         {
             //regex pattern is created to check validity
-            string pattern = "^[a-z ]{3}[a-z A-Z 0-9]*$";
+            string pattern = @"^[a-z]{3}[a-zA-Z0-9]*@[a-zA-z]+";
             Regex regex = new Regex(pattern);
-            // IsMatch method check the pattern and pincode
+            // IsMatch method check the pattern and mail
             if (regex.IsMatch(mail))
             {
                 Console.WriteLine("Email :{0} is Valid", mail);
