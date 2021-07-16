@@ -24,7 +24,7 @@ namespace RegexExpression
 
                 case 2:
                     Email email = new Email();
-                    string[] mail = {"abc.xyz@bridgeLabz.co.in","abf@gmail.co.in.in","a@bcd3","a@"};
+                    string[] mail = {"abc.xyz@bridgeLabz.co.in","abf@gmail.co.in.in","a@bcd3","a@gmail"};
                     for (int i = 0; i < mail.Length; i++)
                     {
                         email.Check(mail[i]);

@@ -13,7 +13,7 @@ namespace RegexExpression
             //regex pattern is created to check validity
             string pattern = @"^[a-z]{3}([\# \+ _\.]*[a-zA-Z0-9])*@[a-zA-z]+\.[a-z]{2,3}(\.[a-zA-Z]{2,4}){0,1}$";
             Regex regex = new Regex(pattern);
-            // IsMatch method check the pattern and mail
+            // IsMatch method check the pattern and mail id
             if (regex.IsMatch(mail))
             {
                 Console.WriteLine("Email :{0} is Valid", mail);
